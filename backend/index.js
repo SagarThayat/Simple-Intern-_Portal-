@@ -4,7 +4,12 @@ const cors = require("cors");
 const app = express();
 app.use(cors());
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
+
+// ✅ Default route for testing or Render health check
+app.get("/", (req, res) => {
+    res.send("Intern Portal Backend is live ✅");
+});
 
 app.get("/api/user", (req, res) => {
     res.json({
