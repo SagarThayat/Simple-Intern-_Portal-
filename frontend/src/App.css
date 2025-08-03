@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.login,
+.dashboard,
+.leaderboard {
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem;
+  background: white;
+  margin-top: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
